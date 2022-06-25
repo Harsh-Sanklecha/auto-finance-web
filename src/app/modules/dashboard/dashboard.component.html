@@ -1,0 +1,64 @@
+<div class="dashboard-layout">
+    <div class="top-nav d-flex align-items-center justify-content-between">
+        <h3 class="mb-0">Welcome back {{ company.name }}!</h3>
+        <div class="d-flex align-items-center">
+            <span class="todays-date"> {{todaysDate | date: 'd MMM y, EEEE'}} </span>
+            <div class="search">
+                <mat-icon>search</mat-icon>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-content d-flex">
+        <div class="col-8">
+            <div class="d-flex gap-3 align-items-center">
+                <div class="welcome-back">
+                    <div>
+                        <h3>Today's Total Estimated Collection</h3>
+                        <h2><span>₹ </span>2000</h2>
+                    </div>
+                </div>
+                <div class="welcome-back">
+                    <div>
+                        <h3>Today's Estimated Collection Received</h3>
+                        <h2><span>₹ </span>0</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <h4>Today's Due Collections (7) </h4>
+            <div class="todays-emi d-flex align-items-center">
+                <div class="todays-emi__card">
+                    <img src="assets/images/default-profile.svg">
+                    <div class="body">
+                        <h5 class="mb-1"> <span>Rs.</span>1311 </h5>
+                        <span class="name"> Md Abdul Razzaq </span>
+                    </div>
+                    <span class="emi">07<span>/30</span></span>
+                </div>
+            </div>
+            
+            <h4>Revenue Analytics</h4>
+        </div>
+        <div class="pending col-4 d-flex flex-column gap-4">
+            <div class="d-flex align-items-end justify-content-between">
+                <h4 class="mb-0">Due List</h4>
+                <select class="form-select">
+                    <option selected>Sort By</option>
+                    <option value="1">Most Recent</option>
+                    <option value="2">Two</option>
+                  </select>
+            </div>
+            <div class="pending-list flex-grow-1">
+                <div class="pending__card gap-3">
+                    <img src="assets/images/default-profile.svg">
+                    <div class="flex-grow-1">
+                        <h5 class="mb-0"> Shiva kumar </h5>
+                        <span>Last Paid: 03 Oct 2021</span>
+                    </div>
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+            </div>
+            <button mat-flat-button color="primary" [routerLink]="['form']"> Add Lender </button>
+        </div>
+    </div>
+</div>

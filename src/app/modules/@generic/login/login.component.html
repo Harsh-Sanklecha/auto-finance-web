@@ -1,0 +1,9 @@
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Phone Number</mat-label>
+    <input matInput [(ngModel)]="phoneNumber">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" [(ngModel)]="password">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSubmit()">Login</button>

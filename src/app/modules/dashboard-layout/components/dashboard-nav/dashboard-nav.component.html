@@ -1,0 +1,22 @@
+<div class="nav-wrapper">
+
+    <div class="nav d-flex flex-column">
+        <a routerLink="/dashboard" routerLinkActive="active" class="nav__items">
+            <mat-icon class="material-icons-outlined">space_dashboard</mat-icon>
+            <span class="nav__title">Dashboard</span>
+        </a>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav__items">
+            <mat-icon class="material-icons-outlined">space_dashboard</mat-icon>
+            <span class="nav__title">Lenders</span>
+        </a>
+        <a routerLink="" class="nav__items">
+            <mat-icon class="material-icons-outlined">space_dashboard</mat-icon>
+            <span class="nav__title">Accounts</span>
+        </a>
+        <div class="mb-auto"></div>
+        <a routerLink="" class="nav__items">
+            <mat-icon class="material-icons-rounded">logout</mat-icon>
+            <span class="nav__title">Logout</span>
+        </a>
+    </div>
+</div>

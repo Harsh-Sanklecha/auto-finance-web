@@ -1,0 +1,25 @@
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Full Name</mat-label>
+    <input matInput [(ngModel)]="name">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Company Name</mat-label>
+    <input matInput [(ngModel)]="companyName">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Phone Number</mat-label>
+    <input matInput [(ngModel)]="phoneNumber">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="email">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" [(ngModel)]="password">
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput type="password" [(ngModel)]="confirmPassword">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSubmit()">Register</button>
